@@ -20,4 +20,4 @@ EXPOSE 8080
 ENV PORT 8080
 
 # Command to run the Flask app
-CMD ["python", "app2.py"]
+CMD ["gunicorn", "-b", "0.0.0.0:8080", "app2:app"]
