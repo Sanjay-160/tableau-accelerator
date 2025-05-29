@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "teqcertify",
+  "private_key_id": "50657adb7cfcfe7fb6cbb9af529815a4a598d580",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC9GvCzMVZqG/gB\nRzdxMnlb06F8Bd24rHXTHkqZUpxFSZDzmzLdaQBl7Qq35791faJLQBTsTXErLVng\nfvNdOMyKHRNFDreMOK8VH23eVyD0w9gT149Ko0psa3hX2zOT/GoQiAg6pUAghqj7\n1MGZ9G4KYheWE236NJAk1Vdv36nZxSYlfrxmBYmLuTc4K5XBLkguQufgHemTIMaA\nCa8jGpkjSG/sVBYY3Z3BAbycXKGfws72Pu+b9/CMvarM5UVIKAX67Au21mTaB0Vz\nbTbdKqfOiCviK/ypo/vGl0pI9EItnLfmxu1DUmBU3r79bAT93dTgNzW2Tnor3j8k\ng3TXWbe5AgMBAAECggEACaau1OrSv9IoYLfgsYw1TQx/64NsdmG/T6uEfF0OzTlZ\nVMSS5bblxpUH1bsOvbFeejhb3JAsWneacrkptJQ2dmJCDKyY/y3f29tlDZKeA6/r\nTOzUtbVKg+jNVT4XwC4faoiuxQ4ejRwwfU3Ds+wLPlaG7xQ+qewuuDb28F9WeVC6\n/FJYuxNjbVu6s7ZBbqgHZe+2I/B8CnZTBM1yxrTV1e5W0Ia3e1D+PWQAdVaGc422\nEzCEJth/dqpZ179POv9jtJQ71+uQuWhbUwZv6sJXeUCYzo8DLOl5p45pWsXw1w+P\noQMeg4eFj9WwXAW9R0qtA9/mkgi2uKgdLaoVkzNeuwKBgQDcZiD0XzGyransHaIV\nJD22wqIgXL3vOCvQBKjf3bqT/tl12KxMVEnIJoBV1svKotHVLmPi/t3vBvvq/AOk\nIct95pYSWc5/3zYxSCwi3xmQSKE/dzXE9WZ5NH2NZrChAdQDjwVdbaIe7JvP4iJq\n1NgUbBuiUCkIYrpodUXzcxPpSwKBgQDbpsN3nKam0P5i8hXkiVpkHux/824y2EPV\nO7e4uiFZTkc2nK2eAsaC5lueuIwHnR2MrsLVLjykNryNc0nkxPUAgJ3wXwCXSn7f\nFw21S4ifeUa7f3DwCkD2QZgQHAylHwOOeeUAXnOZqsnJ2aXvg+pZSMfWny8YI6e1\nxd8NJoKkiwKBgQCwZPzTGK1J+DwbQcxLZ2oNL9FaXV+WajqGjnQqV+fQMxQQgY3E\nuWEj08y65uLMF2whVrOTJbCyccCF3ZV8c5/N8BMENORU620QHFdWwYBQPhDwHpTm\nQhH1x9EErr+G3VO2VW1RzUEHxw8dXjt1jUwzbCLh0Y5Fq97NY67Mnbm96QKBgAoR\nbsxAxfLHiaGHbzF2ikokkLqcseRqvVE814MEJRsu11zNebfQcMD3RiPUWbbPoNcd\n+5hB8k2kpKfnLO/rhz9qpdKqyCAnLgGT0PEKcUy+Blv5z3dxQOEIyKuUXZAEB+mz\n9Kc7rRjSF0XFUDHWXhuRlndj/IiiucE/PKYhqcNZAoGBAMY4b0qS0mGKVAx/GWap\n4XVwCPbxne/Jjic9Y/u5A4Rhw5TBtRyXw26JhJgsp763BTe8fmSIGp6ccrWyswkm\nlnl3Q/sUKC8A1x9yC/a6S93yy6EC/tDcr3avJPqRjkeZWweQLYSwbnd8hoVZh04i\nWvdztDPMWXbehCR7VXAsMH28\n-----END PRIVATE KEY-----\n",
+  "client_email": "tableau-accelerator@teqcertify.iam.gserviceaccount.com",
+  "client_id": "100489908361637161633",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tableau-accelerator%40teqcertify.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

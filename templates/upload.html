@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload .twb File</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Upload .twb File</h1>
+    <form id="upload-form" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".twb,.twbx" required>
+        <input type="submit" value="Upload">
+    </form>
+
+    <h2>Extracted Metadata</h2>
+    <div id="metadata-display"></div> <!-- Container to display extracted metadata -->
+
+    <h1>Convert to Domo</h1>
+    <button id="convert-button" disabled>Convert to Domo</button> <!-- Disable initially -->
+
+    <script>
+        let extractedData = {};
+
+        $(document).ready(function(){
+            // Handle file upload form submission
+            $('#upload-form').on('submit', function(e){
+                e.preventDefault();
+                
+                var formData = new FormData(this);
+                $.ajax({
+                    url: '/extract_metadata',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        // Store the extracted metadata
+                        extractedData = response;
+
+                        // Display extracted metadata below the form
+                        $('#metadata-display').html('<pre>' + JSON.stringify(response, null, 2) + '</pre>');
+                        
+                        // Enable the Convert to Domo button
+                        $('#convert-button').prop('disabled', false);
+                    },
+                    error: function(xhr) {
+                        alert('Error extracting metadata: ' + xhr.responseJSON.error);
+                    }
+                });
+            });
+
+            // Handle Convert to Domo button click
+            $('#convert-button').on('click', function(){
+                if (extractedData.calculations) {
+                    $.ajax({
+                        url: '/convert_to_domo',
+                        type: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify({ calculations: extractedData.calculations }),
+                        success: function(response) {
+                            alert('Successfully converted to Domo formulas!');
+                            console.log(response);
+                        },
+                        error: function(xhr) {
+                            alert('Error converting to Domo: ' + xhr.responseJSON.error);
+                        }
+                    });
+                } else {
+                    alert('No calculations found to convert.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
